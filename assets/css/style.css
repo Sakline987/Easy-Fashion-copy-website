@@ -1,4 +1,4 @@
-.header {
+.header-menu {
     padding-left: 69px;
     padding-right: 58px;
     display: flex;
@@ -6,11 +6,12 @@
 }
 
 
-.header .header-left {
+.header-menu .header-left {
     margin-top: 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    width: 30%;
 }
 
 .header-left ul {
@@ -34,20 +35,26 @@
 
 }
 
+.header-left ul li a:hover {
+    text-decoration: underline;
 
-.header .header-middle {
+}
+
+
+.header-menu .header-middle {
     margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30%;
 }
 
-.header .header-middle .image a img {
+.header-menu .header-middle .image a img {
     width: 40%;
     height: 100%;
 }
 
-.header .header-middle .image a {
+.header-menu .header-middle .image a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,14 +62,15 @@
 
 
 
-.header .header-right {
+.header-menu .header-right {
     margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 30%;
 }
 
-.header .header-right a {
+.header-menu .header-right a {
     text-decoration: none;
     color: black;
     margin-left: 20px;
@@ -70,24 +78,20 @@
 
 }
 
-.header .header-right a i {
+.header-menu .header-right a i {
     width: 20px;
     height: 20px;
 }
 
 
-.header .header-right .btn a {
+.header-menu .header-right .btn a {
     background-color: rgb(98 191 98);
     color: rgb(255, 255, 255);
     padding: 11px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
-
-
-
 /* sliding area */
-
 
 .slider-area {
     display: flex;
@@ -200,7 +204,7 @@
     transform: rotate(-180deg);
     font-size: 12px;
     font-weight: 700;
-    opacity: .5;
+    opacity: .7;
 }
 
 .owl-carousel img {
@@ -230,4 +234,23 @@
     right: 0;
     top: 50%;
     z-index: 999;
+}
+
+.header .header-collection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .header-collection a {
+    color: #2b2525;
+    padding-left: 19px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.header .header-collection a:hover {
+    text-decoration: none;
 }
