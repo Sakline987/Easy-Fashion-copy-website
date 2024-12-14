@@ -21,3 +21,24 @@ jQuery(document).ready(function () {
     })
 
 });
+
+
+
+function myFunction() {
+    var x = document.getElementById("myNavBar");
+    var menuIcon = document.getElementById("menuIcon");
+    var iconContainer = document.querySelector('.icon');
+
+    // Toggle the navbar between normal and responsive
+    if (x.className === "header-left") {
+        x.className += " responsive";
+        iconContainer.classList.add('open');
+        iconContainer.classList.remove('close');
+        menuIcon.className = "fa fa-times"; // Change to close icon
+    } else {
+        x.className = "header-left";
+        iconContainer.classList.add('close');
+        iconContainer.classList.remove('open');
+        menuIcon.className = "fa fa-bars"; // Change back to hamburger icon
+    }
+}

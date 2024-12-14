@@ -16,14 +16,15 @@
 <body>
     <div class="header">
         <div class="header-menu">
-            <div class="header-left">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">Winter 24/25</a></li>
-                    <li><a href="#">SHOP .</a></li>
-                    <li><a href="#">EASY .</a></li>
-                    <li><a href="#">How to Order</a></li>
-                </ul>
+            <div class="header-left" id="myNavBar">
+                <a href="#">HOME</a>
+                <a href="#">Winter 24/25</a>
+                <a href="#">SHOP .</a>
+                <a href="#">EASY .</a>
+                <a href="#">How to Order</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa-solid fa-bars" id="menuIcon"></i> <!-- Initial icon -->
+                </a>
             </div>
             <div class="header-middle">
                 <div class="image">
@@ -38,6 +39,7 @@
                 <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
                 <a href="#"><i class="fa-regular fa-heart"></i></a>
                 <a href="#"><i class="fa-regular fa-user"></i></a>
+
                 <div class="btn">
                     <a href="#">OUTLETS</a>
                 </div>
